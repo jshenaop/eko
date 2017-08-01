@@ -1,0 +1,223 @@
+/*  www.bigtalenter.com
+/*  CSS - Index.html
+ *  ==========================*/
+
+/* =========================== */
+/* Body
+/* Color, Typography and Links */
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/* =========================== */
+
+/* =========================== */
+/* NavBar
+/* Color, Typography and Links */
+
+.navbar-default {
+    background-color: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, 1);
+}
+
+.navbar-brand {
+    max-width: 100%;
+}
+
+.navbar-right {
+    margin: 0 10px 0 0;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px !important;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    margin: 3px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar .nav > li > a:hover {
+    float: none;
+    margin: 3px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar-default .navbar-nav > li > a.btnLogin {
+  white-space: nowrap;
+  background-color: transparent;
+  height: 40px;
+  line-height: 0px;
+  margin: 8px 20px 0 10px;
+  padding: 0 15px 3px 15px;
+  height: 40px;
+  line-height: 38px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #000000;
+    border-bottom-color: #FFF;
+    border-bottom-style: solid;
+ }
+
+.container-fluid > .navbar-collapse {
+    margin-right: 45px;
+    margin-left: 45px;
+}
+
+.navbar-toggle {
+    margin-top: 20px !important;
+}
+
+/* =========================== */
+
+/* =========================== */
+/* Sections
+/* Color, Typography and Links */
+
+.intro-section {
+    width= 100%;
+    padding-top: 0px;
+    text-align: center;
+    background: #000000;
+}
+
+.about-section {
+    width= 100%;
+    padding-top: 0px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.services-section {
+    width= 100%;
+    padding-top: 0px;
+    text-align: center;
+    background: #24AEEF;
+}
+
+.eko_escucha {
+    width= 100%;
+    padding-top: 0px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.eko_clasifica {
+    width= 100%;
+    padding-top: 0px;
+    text-align: center;
+    background: #17133D;
+}
+
+.eko_interpreta {
+    width= 100%;
+    padding-top: 0px;
+    text-align: center;
+    background: #24AEEF;
+}
+
+/* =========================== */
+
+/* =========================== */
+/* Contact
+/* Color, Typography and Links */
+
+p {
+	font-family: 'Raleway', sans-serif !important;
+}
+
+h3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 450px 0px 50px 0px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 3.0em;
+    color: #fff;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 3.0em;
+    color: #fff;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+h6 {
+    font-size: 10px;
+    color: #fff;
+    margin: 22px 0 0 -45px;
+    text-align: left;
+}
+/* =========================== */
+
+/* =========================== */
+/* Resposive
+/* Color, Typography and Links */
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+	.navbar-brand {
+    	max-width: 95%;
+	}
+
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+@media(max-width:767px) {
+
+	.navbar-brand {
+    	max-width: 95%;
+	}
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+
+}
+
+/* =========================== */

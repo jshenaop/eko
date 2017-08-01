@@ -1,0 +1,51 @@
+## Install Anaconda
+curl -O https://repo.continuum.io/archive/Anaconda2-4.3.1-Linux-x86_64.sh
+bash Anaconda2-4.3.1-Linux-x86_64.sh
+
+## Create conda-virtualenv
+## https://conda.io/docs/using/envs.html
+curl -O https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh
+bash Anaconda3-4.3.1-Linux-x86_64.sh 
+conda create --name soleka python=3.5
+
+pip install flask
+pip install nltk
+## http://uwsgi-docs.readthedocs.io/en/latest/Install.html
+apt-get install build-essential python
+pip install uwsgi
+pip install peewee
+pip install argon2_cffi
+pip install flask_restful
+pip install pandas
+pip install xlrd
+
+
+###   Open Python
+import nltk
+nltk.download('All')
+
+sudo /etc/init.d/nginx start
+sudo rm /etc/nginx/sites-enabled/default
+sudo touch /etc/nginx/sites-available/flask-settings
+sudo ln -s /etc/nginx/sites-available/flask-settings /etc/nginx/sites-enabled/flask-settings
+sudo nano /etc/nginx/sites-available/flask-settings
+sudo /etc/init.d/nginx restart
+
+sudo pip3 install virtualenv
+sudo apt-get install python3-pip python3-dev nginx
+virtualenv solekaenv
+source solekaenv/bin/activate
+gunicorn soleka:app
+pkill gunicorn
+sudo rm analytics/FRECUENCY_SET/frecuency_topic_without_pivot.csv
+sudo supervisorctl start soleka
+sudo supervisorctl stop soleka
+
+#Flask and Gunicorn
+https://realpython.com/blog/python/kickstarting-flask-on-ubuntu-setup-and-deployment/
+https://www.youtube.com/watch?v=kDRRtPO0YPA&t=297s
+
+http://stackoverflow.com/questions/28166161/nginx-gunicorn-flask-constant-500-errors-after-x-hours-of-usage
+http://markjberger.com/flask-with-virtualenv-uwsgi-nginx/
+https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-14-04
+https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-ubuntu-16-04
